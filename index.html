@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Huda | Modest Islamic Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        khaki: '#C3B091',
+                        stone: '#D6D3D1',
+                        charcoal: '#36454F',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C3B091' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .transition-slow {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-stone-50 text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-serif font-medium text-charcoal">Al-Huda</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-khaki transition-slow">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-khaki transition-slow">Collections</a>
+                    <a href="#" class="text-gray-700 hover:text-khaki transition-slow">About</a>
+                    <a href="#" class="text-gray-700 hover:text-khaki transition-slow">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-khaki transition-slow">
+                        <i data-feather="shopping-bag"></i>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-khaki transition-slow">
+                        <i data-feather="user"></i>
+                    </a>
+                    <button class="md:hidden text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-serif font-medium mb-6">Elegant Modesty <br> <span class="text-khaki">Reimagined</span></h1>
+                    <p class="text-gray-600 mb-8 max-w-md">Discover our timeless collection of Islamic fashion that blends tradition with contemporary elegance.</p>
+                    <a href="#" class="bg-charcoal text-white px-6 py-3 inline-block hover:bg-khaki transition-slow">Explore Collections</a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-2 shadow-md">
+                        <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Modest Fashion" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-medium mb-4">Our Collections</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Carefully curated pieces that celebrate modesty without compromising on style</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Collection 1 -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Abaya Collection" class="w-full h-96 object-cover transition-slow group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <a href="#" class="bg-white text-charcoal px-6 py-2 font-medium">Abaya Collection</a>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581040703659-3cde9e1a1f36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Hijab Collection" class="w-full h-96 object-cover transition-slow group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <a href="#" class="bg-white text-charcoal px-6 py-2 font-medium">Hijab Collection</a>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Thobe Collection" class="w-full h-96 object-cover transition-slow group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <a href="#" class="bg-white text-charcoal px-6 py-2 font-medium">Thobe Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="About Al-Huda" class="w-full h-auto shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-serif font-medium mb-6">Our Philosophy</h2>
+                    <p class="text-gray-600 mb-6">At Al-Huda, we believe modesty is a timeless virtue that deserves to be celebrated with elegance and sophistication. Our designs blend traditional Islamic values with contemporary aesthetics.</p>
+                    <p class="text-gray-600 mb-8">Each piece is crafted with attention to detail, using premium fabrics that offer both comfort and durability. We're committed to ethical production practices and sustainable materials.</p>
+                    <a href="#" class="border border-charcoal text-charcoal px-6 py-3 inline-block hover:bg-charcoal hover:text-white transition-slow">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-medium mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Authentic experiences from our valued community</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-stone-50 p-8 rounded shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Aisha" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Aisha Rahman</h4>
+                            <p class="text-gray-500 text-sm">Dubai</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The quality of Al-Huda's abayas is exceptional. I've been wearing them for years and they still look brand new."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-stone-50 p-8 rounded shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Fatima Khalid</h4>
+                            <p class="text-gray-500 text-sm">London</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I love how Al-Huda combines modesty with modern fashion. Their pieces are versatile enough for both work and special occasions."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-stone-50 p-8 rounded shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Yusuf" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Yusuf Abdullah</h4>
+                            <p class="text-gray-500 text-sm">Kuala Lumpur</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The thobes from Al-Huda are my go-to for Jumu'ah prayers. Comfortable, stylish, and made with premium fabric."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-charcoal text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-medium mb-4">Stay Updated</h2>
+            <p class="text-stone-300 mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive offers, new arrivals, and style inspiration.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded text-charcoal focus:outline-none focus:ring-2 focus:ring-khaki">
+                <button type="submit" class="bg-khaki text-charcoal px-6 py-3 rounded hover:bg-stone-300 transition-slow font-medium">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-medium mb-4">Al-Huda</h3>
+                    <p class="text-gray-600 mb-4">Elegant Islamic fashion for the modern believer.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-khaki transition-slow"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-khaki transition-slow"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-khaki transition-slow"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">Abayas</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">Hijabs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">Thobes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">Contact</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-khaki transition-slow">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600"><i data-feather="mail" class="mr-2 w-4"></i> hello@alhuda.com</li>
+                        <li class="flex items-center text-gray-600"><i data-feather="phone" class="mr-2 w-4"></i> +1 (555) 123-4567</li>
+                        <li class="flex items-center text-gray-600"><i data-feather="map-pin" class="mr-2 w-4"></i> 123 Modest St, Fashion District</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-200 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 Al-Huda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
